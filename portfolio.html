@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <title>Portfolio | CodeXa Infotech LLP — Our Projects</title>
+    <meta name="description"
+        content="Browse CodeXa Infotech's portfolio of real projects — web apps, mobile apps, AI platforms, CRM systems, and more.">
+    <meta name="keywords"
+        content="CodeXa Infotech portfolio, web development projects, app development portfolio, AI projects, CRM platform, software company work">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- AOS Library for Mobile-Friendly Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/page-header.css" rel="stylesheet" />
+    <link href="css/portfolio.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 1. Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <img class="loader-logo-img" src="assets/logo.png" alt="CodeXa Infotech LLP" />
+            <div class="loader-progress-bar">
+                <div class="loader-progress" id="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Background Elements -->
+    <div class="ambient-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <ul class="floating-particles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="noise-overlay"></div>
+    </div>
+    <!-- 2. Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a class="logo" href="index.html"><img class="logo-img" src="assets/logo.png"
+                    alt="CodeXa Infotech LLP" /></a>
+            <nav class="nav-links" id="nav-links">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="btn btn-primary mobile-menu-btn" href="contact.html">Get Started</a>
+            </nav>
+            <a class="btn btn-primary desktop-btn" href="contact.html">Get Started</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 4. Services Section -->
+
+    <!-- 5. Portfolio Section -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="text-center" data-aos="drop-down-3d">Our <span class="gradient-text">Projects</span></h2>
+            <p class="text-center lead-text" data-aos="drop-down-3d" data-aos-delay="100"
+                style="max-width:600px;margin:0 auto 3rem;">Real solutions delivered for real businesses. Click any
+                project to see the full story.</p>
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Cards rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Detail Modal -->
+    <div class="project-modal-overlay" id="projectModalOverlay">
+        <div class="project-modal" id="projectModal">
+            <button class="project-modal-close" id="projectModalClose" aria-label="Close">&times;</button>
+            <div class="project-modal-header" id="projectModalHeader">
+                <span class="project-modal-service" id="projectModalService"></span>
+                <h2 class="project-modal-company" id="projectModalCompany"></h2>
+            </div>
+            <div class="project-modal-body">
+                <p class="project-modal-desc" id="projectModalDesc"></p>
+                <div class="project-modal-section">
+                    <h4><i class='bx bx-code-alt'></i> Tech Stack</h4>
+                    <div class="project-modal-tags" id="projectModalTech"></div>
+                </div>
+                <div class="project-modal-section">
+                    <h4><i class='bx bx-check-circle'></i> Key Deliverables</h4>
+                    <ul class="project-modal-features" id="projectModalFeatures"></ul>
+                </div>
+                <a class="btn btn-primary project-modal-link" id="projectModalLink" href="#" target="_blank"
+                    rel="noopener">
+                    <i class='bx bx-link-external'></i> Visit Website
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 6. About Section -->
+
+    <!-- 7. Achievements Section -->
+
+    <!-- 8. Contact Section -->
+
+    <!-- 9. Footer -->
+    <footer class="footer glass-panel no-border-radius">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="logo" href="index.html"><img class="logo-img footer-logo-img" src="assets/logo.png"
+                            alt="CodeXa Infotech LLP" /></a>
+                    <p class="footer-desc">Building future technology with award-winning design and unparalleled
+                        software
+                        engineering.</p>
+                    <div class="social-links">
+                        <a class="glass-panel icon-btn" href="#"><i class="bx bxl-linkedin"></i></a>
+                        <a class="glass-panel icon-btn" href="#"><i class="bx bxl-twitter"></i></a>
+                        <a class="glass-panel icon-btn" href="#"><i class="bx bxl-instagram"></i></a>
+                        <a class="glass-panel icon-btn" href="#"><i class="bx bxl-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">App Development</a></li>
+                        <li><a href="services.html">AI Solutions</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 CodeXa Infotech LLP. Premium Digital Agency.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts: Mobile Friendly & Lightweight -->
+    <!-- AOS for Scroll Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Vanilla-Tilt for 3D card tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <!-- Main JS -->
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <title>CodeXa Infotech LLP | Premium Tech Solutions</title>
+    <meta name="description"
+        content="CodeXa Infotech LLP — Premium digital agency specialising in web development, app development, AI solutions, and digital marketing. We build digital empires.">
+    <meta name="keywords"
+        content="CodeXa Infotech, web development, app development, AI solutions, digital marketing, software development, mobile app, React, Node.js, premium tech, tech company India, custom software, video editing, SEO services">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- AOS Library for Mobile-Friendly Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/hero.css" rel="stylesheet" />
+    <link href="css/services.css" rel="stylesheet" />
+    <link href="css/home-sections.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 1. Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <img class="loader-logo-img" src="assets/logo.png" alt="CodeXa Infotech LLP" />
+            <div class="loader-progress-bar">
+                <div class="loader-progress" id="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Background Elements -->
+    <div class="ambient-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <ul class="floating-particles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="noise-overlay"></div>
+    </div>
+    <!-- 2. Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a class="logo" href="index.html"><img class="logo-img" src="assets/logo.png"
+                    alt="CodeXa Infotech LLP" /></a>
+            <nav class="nav-links" id="nav-links">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="btn btn-primary mobile-menu-btn" href="contact.html">Get Started</a>
+            </nav>
+            <a class="btn btn-primary desktop-btn" href="contact.html">Get Started</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <!-- 3. Hero Section (Slider) -->
+    <section class="hero slider-section" id="home">
+        <div class="hero-slider-container">
+            <div class="hero-slider" id="heroSlider">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="container hero-container">
+                        <div class="hero-content">
+                            <div class="hero-logo-wrapper">
+                                <img class="hero-logo" src="assets/logo.png" alt="CodeXa Infotech LLP" />
+                            </div>
+                            <h1 class="hero-title">We Build <span class="blue-text">Digital</span> Empires</h1>
+                            <p class="hero-subtitle">From vision to reality — CodeXa Infotech transforms bold ideas into
+                                premium digital experiences that dominate markets and captivate audiences worldwide.</p>
+                            <div class="hero-buttons">
+                                <a class="btn btn-primary" href="services.html"><i class="bx bx-rocket"></i> Explore
+                                    Solutions</a>
+                                <a class="btn btn-white" href="contact.html"><i class="bx bx-conversation"></i> Let's
+                                    Talk</a>
+                            </div>
+                            <div class="hero-stats">
+                                <div class="hero-stat">
+                                    <h3>50+</h3>
+                                    <p>Projects Delivered</p>
+                                </div>
+                                <div class="hero-stat">
+                                    <h3>20+</h3>
+                                    <p>Happy Clients</p>
+                                </div>
+                                <div class="hero-stat">
+                                    <h3>3+</h3>
+                                    <p>Years of Excellence</p>
+                                </div>
+                                <div class="hero-stat">
+                                    <h3>100%</h3>
+                                    <p>Client Satisfaction</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-visual">
+                            <div class="hero-video-card glass-panel">
+                                <video autoplay muted loop playsinline preload="metadata">
+                                    <source src="assets/Video_Ready_After_Black_Screen.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- 4. Services Preview Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header text-center" data-aos="drop-down-3d">
+                <h2>What We <span class="gradient-text">Deliver</span></h2>
+                <p>Premium solutions engineered for exceptional results.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card glass-panel" data-aos="drop-down-3d" data-aos-delay="100">
+                    <div class="service-icon"><i class="bx bx-code-curly"></i></div>
+                    <h3>Software Development</h3>
+                    <p>Enterprise-grade software solutions with clean architecture, scalable infrastructure, and
+                        pixel-perfect frontends.</p>
+                    <a class="card-arrow" href="services.html">Learn more <i class="bx bx-right-arrow-alt"></i></a>
+                </div>
+                <div class="service-card glass-panel" data-aos="drop-down-3d" data-aos-delay="200">
+                    <div class="service-icon"><i class="bx bx-mobile-alt"></i></div>
+                    <h3>App Development</h3>
+                    <p>Cross-platform mobile apps with buttery-smooth performance, intuitive UX, and native-level
+                        quality.</p>
+                    <a class="card-arrow" href="services.html">Learn more <i class="bx bx-right-arrow-alt"></i></a>
+                </div>
+                <div class="service-card glass-panel" data-aos="drop-down-3d" data-aos-delay="300">
+                    <div class="service-icon"><i class="bx bx-trending-up"></i></div>
+                    <h3>Digital Marketing</h3>
+                    <p>Data-driven campaigns that 10x your brand visibility, drive conversions, and dominate search
+                        rankings.</p>
+                    <a class="card-arrow" href="services.html">Learn more <i class="bx bx-right-arrow-alt"></i></a>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 3rem;" data-aos="drop-down-3d" data-aos-delay="400">
+                <a class="btn btn-primary" href="services.html"><i class="bx bx-grid-alt"></i> View All Services</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 5. Why Choose Us Section -->
+    <section class="section why-us" id="why-us">
+        <div class="container">
+            <div class="section-header text-center" data-aos="drop-down-3d">
+                <h2>Why Choose <span class="gradient-text">CodeXa</span></h2>
+                <p>What makes us the go-to partner for ambitious businesses.</p>
+            </div>
+            <div class="why-us-grid">
+                <div class="why-us-card glass-panel" data-aos="drop-down-3d" data-aos-delay="100">
+                    <div class="why-us-icon icon-blue"><i class="bx bx-shield-quarter"></i></div>
+                    <h3>Enterprise Grade</h3>
+                    <p>Production-ready code with security, performance, and scalability built in from day one.</p>
+                </div>
+                <div class="why-us-card glass-panel" data-aos="drop-down-3d" data-aos-delay="200">
+                    <div class="why-us-icon icon-purple"><i class="bx bx-timer"></i></div>
+                    <h3>Agile Delivery</h3>
+                    <p>Sprint-based workflows with weekly demos so you see progress — not just promises.</p>
+                </div>
+                <div class="why-us-card glass-panel" data-aos="drop-down-3d" data-aos-delay="300">
+                    <div class="why-us-icon icon-teal"><i class="bx bx-palette"></i></div>
+                    <h3>Design-First</h3>
+                    <p>Pixel-perfect UI/UX that users love — because great software deserves great design.</p>
+                </div>
+                <div class="why-us-card glass-panel" data-aos="drop-down-3d" data-aos-delay="400">
+                    <div class="why-us-icon icon-green"><i class="bx bx-support"></i></div>
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated account managers and round-the-clock technical support, always.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Portfolio Preview Section -->
+    <section class="section portfolio-preview" id="portfolio-preview">
+        <div class="container">
+            <div class="section-header text-center" data-aos="drop-down-3d">
+                <h2>Featured <span class="gradient-text">Work</span></h2>
+                <p>A glimpse of the projects that define our craft.</p>
+            </div>
+            <div class="portfolio-preview-grid">
+                <div class="portfolio-preview-card glass-panel" data-aos="drop-down-3d" data-aos-delay="100">
+                    <div class="portfolio-preview-img">
+                        <img src="assets/gsgold.png" alt="GS Gold" loading="lazy" />
+                        <div class="portfolio-preview-overlay">
+                            <a class="btn btn-primary btn-sm" href="portfolio.html">View Details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-preview-info">
+                        <h3>GS Gold</h3>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">AI</span>
+                    </div>
+                </div>
+                <div class="portfolio-preview-card glass-panel" data-aos="drop-down-3d" data-aos-delay="200">
+                    <div class="portfolio-preview-img">
+                        <img src="assets/satvika.png" alt="Satvika Organic" loading="lazy" />
+                        <div class="portfolio-preview-overlay">
+                            <a class="btn btn-primary btn-sm" href="portfolio.html">View Details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-preview-info">
+                        <h3>Satvika Organic</h3>
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Vite</span>
+                        <span class="tech-tag">i18n</span>
+                    </div>
+                </div>
+                <div class="portfolio-preview-card glass-panel" data-aos="drop-down-3d" data-aos-delay="300">
+                    <div class="portfolio-preview-img">
+                        <img src="assets/codexblock.jpeg" alt="CodeX Blocks" loading="lazy" />
+                        <div class="portfolio-preview-overlay">
+                            <a class="btn btn-primary btn-sm" href="portfolio.html">View Details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-preview-info">
+                        <h3>CodeX Blocks</h3>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Blockly</span>
+                        <span class="tech-tag">Web Audio</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 2.5rem;" data-aos="drop-down-3d" data-aos-delay="400">
+                <a class="btn btn-primary" href="portfolio.html"><i class="bx bx-collection"></i> View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="section trusted-by">
+        <div class="container">
+            <div class="section-header text-center" data-aos="drop-down-3d">
+                <h2>Trusted By <span class="gradient-text">Businesses</span></h2>
+                <p>Proud to partner with these amazing brands.</p>
+            </div>
+            <div class="trusted-marquee-wrapper">
+                <div class="trusted-marquee-track">
+                    <div class="trusted-item"><i class='bx bx-diamond'></i><span>GS Gold</span></div>
+                    <div class="trusted-item"><i class='bx bx-leaf'></i><span>Satvika Organic</span></div>
+                    <div class="trusted-item"><i class='bx bx-code-block'></i><span>CodeX Blocks</span></div>
+                    <div class="trusted-item"><i class='bx bx-link-alt'></i><span>Authentix</span></div>
+                    <div class="trusted-item"><i class='bx bx-code-alt'></i><span>Python Notebook</span></div>
+                    <div class="trusted-item"><i class='bx bx-bar-chart-alt-2'></i><span>CRM Platform</span></div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="trusted-item"><i class='bx bx-diamond'></i><span>GS Gold</span></div>
+                    <div class="trusted-item"><i class='bx bx-leaf'></i><span>Satvika Organic</span></div>
+                    <div class="trusted-item"><i class='bx bx-code-block'></i><span>CodeX Blocks</span></div>
+                    <div class="trusted-item"><i class='bx bx-link-alt'></i><span>Authentix</span></div>
+                    <div class="trusted-item"><i class='bx bx-code-alt'></i><span>Python Notebook</span></div>
+                    <div class="trusted-item"><i class='bx bx-bar-chart-alt-2'></i><span>CRM Platform</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Our Process Section -->
+    <section class="section process" id="process">
+        <div class="container">
+            <div class="section-header text-center" data-aos="drop-down-3d">
+                <h2>How We <span class="gradient-text">Work</span></h2>
+                <p>A proven 4-step process that turns ideas into industry-leading products.</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step" data-aos="drop-down-3d" data-aos-delay="100">
+                    <div class="process-number">01</div>
+                    <h3>Research & Discover</h3>
+                    <p>We deep-dive into your vision, market, and goals to craft the perfect strategy.</p>
+                </div>
+                <div class="process-step" data-aos="drop-down-3d" data-aos-delay="200">
+                    <div class="process-number">02</div>
+                    <h3>Design & Development</h3>
+                    <p>Interactive prototypes, pixel-perfect UI, and clean scalable code built with modern frameworks.
+                    </p>
+                </div>
+                <div class="process-step" data-aos="drop-down-3d" data-aos-delay="300">
+                    <div class="process-number">03</div>
+                    <h3>Testing & Debug</h3>
+                    <p>Rigorous quality assurance, performance testing, and thorough debugging to ensure flawless
+                        results.</p>
+                </div>
+                <div class="process-step" data-aos="drop-down-3d" data-aos-delay="400">
+                    <div class="process-number">04</div>
+                    <h3>Deliver</h3>
+                    <p>Seamless deployment, ongoing support, and continuous optimization post-launch.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. CTA Banner -->
+    <section class="section cta-banner">
+        <div class="container">
+            <div class="cta-inner" data-aos="drop-down-3d">
+                <h2>Ready to Build Something <span>Amazing</span>?</h2>
+                <p>Let's transform your vision into a premium digital experience that dominates your market.</p>
+                <div class="cta-buttons">
+                    <a class="btn-cta-primary" href="contact.html"><i class="bx bx-rocket"></i> Start Your Project</a>
+                    <a class="btn-cta-secondary" href="services.html"><i class="bx bx-grid-alt"></i> Explore
+                        Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Footer -->
+    <footer class="footer glass-panel no-border-radius">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="logo" href="index.html"><img class="logo-img footer-logo-img" src="assets/logo.png"
+                            alt="CodeXa Infotech LLP" /></a>
+                    <p class="footer-desc">Building future technology with award-winning design and unparalleled
+                        software
+                        engineering.</p>
+                    <div class="social-links">
+                        <a class="glass-panel icon-btn" href="#"><i class="bx bxl-linkedin"></i></a>
+                        <a class="glass-panel icon-btn" href="#"><i class="bx bxl-twitter"></i></a>
+                        <a class="glass-panel icon-btn" href="#"><i class="bx bxl-instagram"></i></a>
+                        <a class="glass-panel icon-btn" href="#"><i class="bx bxl-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">App Development</a></li>
+                        <li><a href="services.html">AI Solutions</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 CodeXa Infotech LLP. Premium Digital Agency.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts: Mobile Friendly & Lightweight -->
+    <!-- AOS for Scroll Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Vanilla-Tilt for 3D card tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <!-- Main JS -->
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

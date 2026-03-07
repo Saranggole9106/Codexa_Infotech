@@ -1,0 +1,248 @@
+@media (max-width: 900px) {
+    .hero-container {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-subtitle {
+        margin: 0 auto 2rem;
+    }
+
+    .about .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mv-cards {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Navigation - Always visible on mobile */
+    .desktop-btn {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: none !important;
+    }
+
+    .hamburger {
+        display: none !important;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+        padding: 0.4rem 0.5rem;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 0.2rem;
+    }
+
+    .logo-img {
+        height: 45px;
+    }
+
+    .nav-links {
+        display: flex !important;
+        position: static;
+        width: 100%;
+        height: auto;
+        background: none;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+        gap: 0.3rem;
+        box-shadow: none;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nav-link {
+        font-size: 0.72rem;
+        padding: 0.25rem 0.5rem;
+        border-bottom: none;
+        white-space: nowrap;
+        border-radius: 20px;
+        font-weight: 600;
+        transition: all 0.2s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        background: rgba(0, 102, 204, 0.08);
+        color: var(--primary);
+    }
+
+    /* Sections */
+    :root {
+        --nav-height: auto;
+        --section-pad: 70px 0;
+    }
+
+    .navbar {
+        height: auto;
+        padding: 0.3rem 0;
+    }
+
+    .navbar.scrolled {
+        height: auto;
+    }
+
+    /* Less padding on mobile */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .lead-text,
+    .lead-mb {
+        font-size: 1rem;
+    }
+
+    /* Layout adjustments */
+    .flex-row {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .col-half {
+        width: 100%;
+        flex: none;
+    }
+
+    /* Hero responsive rules are in hero.css */
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        padding: 1.25rem;
+    }
+
+    /* Form inputs: remove backdrop-filter on mobile */
+    .input-group input,
+    .input-group textarea {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        background: rgba(255, 255, 255, 0.9);
+        font-size: 16px;
+        /* prevent iOS zoom on focus */
+    }
+
+    /* Disable hover effects on mobile where touch is primary */
+    .portfolio-overlay {
+        display: none;
+    }
+
+    .service-card:hover {
+        transform: none;
+        box-shadow: var(--glass-shadow);
+    }
+
+    /* About section mobile */
+    .about {
+        padding: 60px 0;
+    }
+
+    .about-visual {
+        height: 250px;
+    }
+
+    .mv-card {
+        padding: 1.2rem;
+    }
+
+    /* Contact section mobile */
+    .contact-item {
+        padding: 1.2rem;
+    }
+
+    .c-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 1.3rem;
+    }
+
+    /* Hero video card responsive rules are in hero.css */
+}
+
+/* --- Small Phones (480px) --- */
+@media (max-width: 480px) {
+    :root {
+        --section-pad: 60px 0;
+    }
+
+    .container {
+        padding: 0 0.85rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .btn {
+        padding: 0.8rem 1.6rem;
+        font-size: 0.9rem;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+}
+
+/* --- Extra Small Phones (400px) --- */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        padding: 0.75rem 1.4rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Ensure JS-Tilt doesn't break mobile bounds */
+.js-tilt {
+    transform-style: preserve-3d;
+}

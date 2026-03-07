@@ -1,0 +1,70 @@
+/* --- About Section --- */
+.about {
+    background: var(--bg-secondary);
+}
+
+.about-visual {
+    height: 350px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+}
+
+.badge-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--primary);
+    transform: translateZ(30px);
+}
+
+.about-visual-text {
+    text-align: center;
+    transform: translateZ(20px);
+}
+
+.mv-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.mv-card {
+    padding: 1.5rem;
+    border-left: 4px solid var(--primary);
+}
+
+.mv-card:nth-child(2) {
+    border-left-color: var(--accent);
+}
+
+.mv-icon {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.mv-card:nth-child(2) .mv-icon {
+    color: var(--accent);
+}
+
+.hover-lift {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hover-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+

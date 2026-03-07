@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM Platform — Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Login Screen -->
+    <div class="login-screen" id="loginScreen">
+        <div class="login-card">
+            <div class="login-logo">
+                <i class='bx bx-bar-chart-alt-2'></i>
+                <h1>CRM Platform</h1>
+                <p>Customer Relationship Management</p>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>Email</label>
+                    <div class="input-icon">
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" id="loginEmail" value="admin@codexa.com" placeholder="Enter your email" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <div class="input-icon">
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" id="loginPassword" value="admin123" placeholder="Enter your password" />
+                    </div>
+                </div>
+                <button type="submit" class="btn-login">
+                    <i class='bx bx-log-in'></i> Sign In
+                </button>
+                <p class="login-hint">Demo: admin@codexa.com / admin123</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main App -->
+    <div class="app" id="app" style="display:none;">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <i class='bx bx-bar-chart-alt-2 sidebar-logo-icon'></i>
+                <span class="sidebar-title">CRM</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a class="nav-item active" data-view="dashboard">
+                    <i class='bx bx-grid-alt'></i>
+                    <span>Dashboard</span>
+                </a>
+                <a class="nav-item" data-view="customers">
+                    <i class='bx bx-group'></i>
+                    <span>Customers</span>
+                </a>
+                <a class="nav-item" data-view="leads">
+                    <i class='bx bx-target-lock'></i>
+                    <span>Leads</span>
+                </a>
+                <a class="nav-item" data-view="tasks">
+                    <i class='bx bx-task'></i>
+                    <span>Tasks</span>
+                </a>
+                <a class="nav-item" data-view="analytics">
+                    <i class='bx bx-line-chart'></i>
+                    <span>Analytics</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="sidebar-user">
+                    <div class="avatar">SA</div>
+                    <div class="user-info">
+                        <span class="user-name">Sarang G.</span>
+                        <span class="user-role">Admin</span>
+                    </div>
+                </div>
+                <a class="nav-item" id="logoutBtn">
+                    <i class='bx bx-log-out'></i>
+                    <span>Log Out</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Mobile Header -->
+        <header class="mobile-header" id="mobileHeader">
+            <button class="menu-toggle" id="menuToggle">
+                <i class='bx bx-menu'></i>
+            </button>
+            <span class="mobile-title">CRM Platform</span>
+            <div class="avatar avatar-sm">SA</div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content" id="mainContent">
+
+            <!-- Top Bar -->
+            <div class="topbar">
+                <div class="topbar-left">
+                    <h2 id="viewTitle">Dashboard</h2>
+                    <p id="viewSubtitle">Welcome back, Sarang</p>
+                </div>
+                <div class="topbar-right">
+                    <div class="search-box">
+                        <i class='bx bx-search'></i>
+                        <input type="text" id="globalSearch" placeholder="Search..." />
+                    </div>
+                    <button class="icon-btn notification-btn" id="notifBtn">
+                        <i class='bx bx-bell'></i>
+                        <span class="notif-badge">3</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dashboard View -->
+            <div class="view active" id="view-dashboard">
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-icon blue"><i class='bx bx-group'></i></div>
+                        <div class="metric-info">
+                            <span class="metric-value" id="metricCustomers">0</span>
+                            <span class="metric-label">Total Customers</span>
+                        </div>
+                        <span class="metric-trend up"><i class='bx bx-trending-up'></i> 12%</span>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon purple"><i class='bx bx-target-lock'></i></div>
+                        <div class="metric-info">
+                            <span class="metric-value" id="metricLeads">0</span>
+                            <span class="metric-label">Active Leads</span>
+                        </div>
+                        <span class="metric-trend up"><i class='bx bx-trending-up'></i> 8%</span>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon green"><i class='bx bx-rupee'></i></div>
+                        <div class="metric-info">
+                            <span class="metric-value" id="metricRevenue">₹0</span>
+                            <span class="metric-label">Revenue</span>
+                        </div>
+                        <span class="metric-trend up"><i class='bx bx-trending-up'></i> 24%</span>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon orange"><i class='bx bx-task'></i></div>
+                        <div class="metric-info">
+                            <span class="metric-value" id="metricTasks">0</span>
+                            <span class="metric-label">Pending Tasks</span>
+                        </div>
+                        <span class="metric-trend down"><i class='bx bx-trending-down'></i> 5%</span>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <div class="card chart-card">
+                        <div class="card-header">
+                            <h3>Revenue Overview</h3>
+                            <select id="chartPeriod" class="select-mini">
+                                <option>Last 6 Months</option>
+                                <option>This Year</option>
+                            </select>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="revenueChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Recent Activity</h3>
+                        </div>
+                        <div class="activity-list" id="activityList"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Sales Pipeline</h3>
+                        </div>
+                        <div class="pipeline-summary" id="pipelineSummary"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Top Customers</h3>
+                        </div>
+                        <div class="top-customers-list" id="topCustomersList"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customers View -->
+            <div class="view" id="view-customers">
+                <div class="view-toolbar">
+                    <div class="toolbar-left">
+                        <div class="search-box">
+                            <i class='bx bx-search'></i>
+                            <input type="text" id="customerSearch" placeholder="Search customers..." />
+                        </div>
+                        <select id="customerFilter" class="select-mini">
+                            <option value="all">All Status</option>
+                            <option value="Active">Active</option>
+                            <option value="Inactive">Inactive</option>
+                        </select>
+                    </div>
+                    <button class="btn-primary" id="addCustomerBtn">
+                        <i class='bx bx-plus'></i> Add Customer
+                    </button>
+                </div>
+                <div class="table-container">
+                    <table class="data-table" id="customersTable">
+                        <thead>
+                            <tr>
+                                <th>Customer</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Company</th>
+                                <th>Status</th>
+                                <th>Revenue</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="customersBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Leads View -->
+            <div class="view" id="view-leads">
+                <div class="view-toolbar">
+                    <div class="toolbar-left">
+                        <div class="search-box">
+                            <i class='bx bx-search'></i>
+                            <input type="text" id="leadSearch" placeholder="Search leads..." />
+                        </div>
+                    </div>
+                    <button class="btn-primary" id="addLeadBtn">
+                        <i class='bx bx-plus'></i> Add Lead
+                    </button>
+                </div>
+                <div class="pipeline-board" id="pipelineBoard"></div>
+            </div>
+
+            <!-- Tasks View -->
+            <div class="view" id="view-tasks">
+                <div class="view-toolbar">
+                    <div class="toolbar-left">
+                        <select id="taskFilter" class="select-mini">
+                            <option value="all">All Tasks</option>
+                            <option value="Pending">Pending</option>
+                            <option value="In Progress">In Progress</option>
+                            <option value="Completed">Completed</option>
+                        </select>
+                    </div>
+                    <button class="btn-primary" id="addTaskBtn">
+                        <i class='bx bx-plus'></i> Add Task
+                    </button>
+                </div>
+                <div class="tasks-list" id="tasksList"></div>
+            </div>
+
+            <!-- Analytics View -->
+            <div class="view" id="view-analytics">
+                <div class="analytics-grid">
+                    <div class="card chart-card wide">
+                        <div class="card-header">
+                            <h3>Monthly Sales Trend</h3>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="salesChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Lead Sources</h3>
+                        </div>
+                        <div class="source-bars" id="sourceBars"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Performance</h3>
+                        </div>
+                        <div class="performance-stats" id="perfStats"></div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <h3 id="modalTitle">Add Customer</h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
